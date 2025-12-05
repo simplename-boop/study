@@ -1,0 +1,95 @@
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Для REM */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Контейнер */
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+}
+
+/* Общие стили для всех блоков */
+.box {
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    text-align: center;
+}
+
+.box h3 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 10px;
+}
+
+.size {
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* 1. Блок с PX - фиксированный */
+.px-box {
+    width: 200px; /* Фиксированная ширина */
+    height: 150px; /* Фиксированная высота */
+    padding: 20px; /* Фиксированные отступы */
+    background-color: #ffcccc;
+    border-width: 3px; /* Толщина границы в px */
+}
+
+/* 2. Блок с % - от родителя */
+.percent-box {
+    width: 50%; /* Половина ширины родителя (.container) */
+    height: 150px;
+    padding: 1%; /* 1% от ширины блока */
+    background-color: #ccffcc;
+}
+
+/* 3. Блок с EM - от размера шрифта */
+.em-box {
+    font-size: 20px; /* Устанавливаем базовый размер */
+    width: 20em; /* 20 × 20px = 400px */
+    height: 10em; /* 10 × 20px = 200px */
+    padding: 1em; /* 1 × 20px = 20px */
+    background-color: #ccccff;
+}
+
+/* 4. Блок с REM - от размера HTML */
+.rem-box {
+    font-size: 1.5rem; /* 1.5 × 16px = 24px */
+    width: 25rem; /* 25 × 16px = 400px */
+    height: 10rem; /* 10 × 16px = 160px */
+    padding: 1rem; /* 1 × 16px = 16px */
+    background-color: #ffffcc;
+}
+
+/* 5. Блок с VW - от ширины окна */
+.vw-box {
+    width: 30vw; /* 30% от ширины окна */
+    height: 150px;
+    padding: 2vw; /* 2% от ширины окна */
+    background-color: #ffccff;
+}
+
+/* 6. Блок с VH - от высоты окна */
+.vh-box {
+    width: 300px;
+    height: 20vh; /* 20% от высоты окна */
+    padding: 2vh; /* 2% от высоты окна */
+    background-color: #ccffff;
+}
