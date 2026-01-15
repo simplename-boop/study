@@ -1,0 +1,31 @@
+.products-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  
+  /* Десктоп: 3 колонки */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  background-color: #e74c3c;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Планшет: 2 колонки */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Мобильный: 1 колонка */
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}

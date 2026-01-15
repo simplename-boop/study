@@ -1,0 +1,51 @@
+.site-layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 250px;
+  grid-template-rows: 80px 1fr 60px;
+  gap: 15px;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #2ecc71;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f1c40f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #9b59b6;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
